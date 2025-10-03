@@ -70,13 +70,11 @@ kotlin {
                 implementation(libs.jetbrains.compose.ui)
 //
                 implementation(libs.jetbrains.compose.material3)
-
-                implementation(libs.kotlin.stdlib)
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.material3)
                 implementation(compose.ui)
-                implementation(compose.components.resources)
+
 
 
 
@@ -86,12 +84,11 @@ kotlin {
 
         androidMain {
             dependencies {
+                implementation(compose.uiTooling)
                 implementation(compose.preview)
+                implementation(libs.androidx.activity.compose)
                 implementation("androidx.emoji2:emoji2:1.5.0")
-                implementation(compose.components.uiToolingPreview) // annotation
-                implementation("androidx.compose.ui:ui-tooling-preview:1.9.0")
                 implementation("androidx.customview:customview-poolingcontainer:1.1.0")
-                //debugImplementation("androidx.compose.ui:ui-tooling:1.9.0") // <- put here, not top-level          }
             }
         }
 
