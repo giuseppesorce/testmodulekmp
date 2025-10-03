@@ -79,9 +79,8 @@ kotlin {
         androidMain {
             dependencies {
                 implementation(compose.components.uiToolingPreview) // annotation
-//                implementation("androidx.compose.ui:ui-tooling-preview:1.9.0")
-//                // debugImplementation("androidx.compose.ui:ui-tooling:1.9.0") // <- put here, not top-level
-//            }
+                implementation("androidx.compose.ui:ui-tooling-preview:1.9.0")
+                //debugImplementation("androidx.compose.ui:ui-tooling:1.9.0") // <- put here, not top-level          }
             }
 
 
